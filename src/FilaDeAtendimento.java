@@ -34,6 +34,22 @@ public class FilaDeAtendimento {
     }
 
     public Pessoa searchByCpf(String cpf){
-        for()
+        Pessoa p = null;
+        for (Pessoa pessoa : this.fila) {
+            if (pessoa.getCpf().equals(cpf)) {
+                p = pessoa;
+            }
+        }
+        return p;
+    }
+
+    public ArrayList<Pessoa> searchByInteresse(byte interesse){
+        ArrayList<Pessoa> lista = new ArrayList<>();
+        for(int i = 0;i<this.fila.size();i++){
+            if (this.fila.get(i).getInteresse() == interesse){
+                lista.add(this.fila.get(i));
+            }
+        }
+
     }
 }
