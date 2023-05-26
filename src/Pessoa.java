@@ -29,8 +29,17 @@ public class Pessoa {
 
     @Override
     public String toString() {
-        return "Nome: " + nome +
+
+        String interesseStr = "";
+
+        switch (interesse){
+            case 1: interesseStr = "Pagamento de conta";
+            case 2: interesseStr = "Recebimento de salário";
+            case 3: interesseStr = "Outros";
+        }
+
+        return "\nNome: " + nome +
                 ", CPF: " + cpf +
-                ", Interesse: " + interesse;
+                ", Interesse: " + interesseStr;
     }
 }
