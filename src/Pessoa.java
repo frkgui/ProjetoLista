@@ -30,7 +30,7 @@ public class Pessoa {
     @Override
     public String toString() {
         return "Nome: " + nome +
-                "\nCPF: " + cpf +
-                "\nInteresse: " + interesse;
+                ", CPF: " + cpf +
+                ", Interesse: " + interesse;
     }
 }
