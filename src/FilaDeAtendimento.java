@@ -50,6 +50,11 @@ public class FilaDeAtendimento {
                 lista.add(this.fila.get(i));
             }
         }
+        return  lista;
+    }
 
+    @Override
+    public String toString() {
+        return "Fila de atendimento: " + fila;
     }
 }
